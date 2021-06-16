@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="heading-top-section">
+          <a href="#" class="reset-game">Again!</a>
+          <p>(Number between 1 and 20)</p>
+        </div>
+        <h1 class="heading-title">Guess My Number!</h1>
+      </div>
+      <div class="answer-section">
+        <div class="answer-section-line"></div>
+        <div class="answer-section-box">
+          <p class="answer-section-content">?</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container main-section">
+        <section class="left-section">
+          <div class="input-section">
+            <input
+              type="number"
+              name="guessed_value"
+              id="user-answer"
+              placeholder="00"
+            />
+            <a href="#" class="check-answer">Check!</a>
+          </div>
+        </section>
+        <section class="right-section">
+          <p class="message">Start Guessing...</p>
+          <div class="scores">
+            <p class="score-board">
+              💯 Score : <span class="score-value">20</span>
+            </p>
+            <p class="highscore-board">
+              🏆 Highscore : <span class="highscore-value">00</span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

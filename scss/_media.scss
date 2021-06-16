@@ -1,0 +1,77 @@
+@media (max-width: 800px) {
+  a {
+    font-size: 1.1rem;
+    font-weight: lighter;
+  }
+
+  // Heading Section Styling
+  .heading-top-section {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    p {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 1rem;
+    }
+    a {
+      min-width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .heading-title {
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+  }
+
+  //   Answer Section Styling
+  .answer-section {
+    &-box {
+      width: 150px;
+      height: 120px;
+    }
+
+    &-content {
+      font-size: 2.7rem;
+    }
+
+    .answer-section-line {
+      height: 6px;
+    }
+  }
+
+  //   Main Section Styling
+  .main-section {
+    flex-direction: column;
+
+    .left-section,
+    .right-section {
+      width: 100%;
+    }
+
+    .right-section {
+      height: 160px;
+      padding-left: 50px;
+
+      .message {
+        font-size: 1rem;
+        font-weight: lighter;
+      }
+
+      .scores {
+        font-size: 1rem;
+        font-weight: lighter;
+      }
+    }
+
+    .left-section {
+      .input-section {
+        input {
+          width: 200px;
+          height: 100px;
+          font-size: 2.7rem;
+        }
+      }
+    }
+  }
+}

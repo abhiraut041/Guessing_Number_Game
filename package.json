@@ -1,0 +1,14 @@
+{
+  "name": "pro1_guess_my_number",
+  "version": "1.0.0",
+  "description": "First JS project for guessing the number",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "AbhijR15",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

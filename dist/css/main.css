@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: black;
+  color: white;
+  font-family: "Press Start 2P", cursive; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem; }
+
+a {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 1rem 1.5em;
+  text-decoration: None;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center; }
+
+.heading-top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .heading-top-section p {
+    margin: auto 0; }
+
+.heading-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem; }
+
+.answer-section {
+  position: relative;
+  margin-top: 2rem; }
+  .answer-section-box {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    text-align: center;
+    z-index: 10; }
+  .answer-section-content {
+    font-size: 3.7rem;
+    padding: 2.5rem 0;
+    font-weight: bold;
+    text-align: center; }
+  .answer-section-line {
+    position: absolute;
+    background: white;
+    height: 8px;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9; }
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  padding: 1.5rem; }
+  .main-section .left-section {
+    width: 50%; }
+    .main-section .left-section .input-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; }
+      .main-section .left-section .input-section input {
+        width: 300px;
+        height: 150px;
+        font-size: 4rem;
+        text-align: center;
+        font-family: "Press Start 2P", cursive;
+        background: black;
+        color: white;
+        border: 5px solid white;
+        padding: 1.5rem; }
+  .main-section .right-section {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .main-section .right-section .message {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold; }
+    .main-section .right-section .scores {
+      font-size: 1.3rem;
+      font-weight: bold; }
+      .main-section .right-section .scores .score-board {
+        margin-bottom: 1rem; }
+
+@media (max-width: 800px) {
+  a {
+    font-size: 1.1rem;
+    font-weight: lighter; }
+  .heading-top-section {
+    flex-direction: column-reverse;
+    gap: 1.5rem; }
+    .heading-top-section p {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 1rem; }
+    .heading-top-section a {
+      min-width: 50%;
+      margin: 0 auto; }
+  .heading-title {
+    font-size: 2.1rem;
+    line-height: 2.9rem; }
+  .answer-section-box {
+    width: 150px;
+    height: 120px; }
+  .answer-section-content {
+    font-size: 2.7rem; }
+  .answer-section .answer-section-line {
+    height: 6px; }
+  .main-section {
+    flex-direction: column; }
+    .main-section .left-section,
+    .main-section .right-section {
+      width: 100%; }
+    .main-section .right-section {
+      height: 160px;
+      padding-left: 50px; }
+      .main-section .right-section .message {
+        font-size: 1rem;
+        font-weight: lighter; }
+      .main-section .right-section .scores {
+        font-size: 1rem;
+        font-weight: lighter; }
+    .main-section .left-section .input-section input {
+      width: 200px;
+      height: 100px;
+      font-size: 2.7rem; } }
